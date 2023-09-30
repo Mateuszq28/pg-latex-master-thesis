@@ -50,12 +50,26 @@
     {.5em}%
     {\MakeUppercase}%
 
+\titleformat{\paragraph}[hang]
+    {\normalfont\fontsize{10}{12}\itshape}%
+    {\thesubsection.}%
+    {.5em}%
+    {}%
+
+\titleformat{\subparagraph}[hang]
+    {\normalfont\fontsize{10}{12}\itshape}%
+    {\thesubsection.}%
+    {.5em}%
+    {}%
+
 % Set upper spacing to 12pt, and bottom spacing to 6pt. It relies on
 % titlesec
 \titlespacing*{\chapter}{0pt}{12pt}{6pt}
 \titlespacing*{\section}{0pt}{12pt}{6pt}
 \titlespacing*{\subsection}{0pt}{12pt}{6pt}
 \titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+\titlespacing*{\paragraph}{0pt}{12pt}{6pt}
+\titlespacing*{\subparagraph}{0pt}{12pt}{6pt}
 
 % Create hyperlinks for TOC, references, etc.
 \usepackage[hidelinks]{hyperref}
